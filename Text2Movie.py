@@ -1,3 +1,10 @@
+"""Text2Movie.py
+  This script processes text input to create video clips with audio using OpenAI's TTS API.
+  It extracts paragraphs, splits them into sentences, generates audio for each sentence,
+  and creates video clips with the audio and text displayed.
+  Usage: python Text2Movie.py <input_file> <suffix>(optional)
+  Example: python Text2Movie.py input.txt my_suffix_
+"""
 import time
 import random
 import openai
@@ -132,8 +139,7 @@ class Text2MovieProcessor:
     return input_sentences
 
   def create_test_audio(self):
-    # create sine wave audio data for testing
-    # Parameters for the sine wave
+    """Create a test audio file with a sine wave."""
     duration = 2.0  # seconds
     sample_rate = 22050
     frequency = 440.0  # Hz

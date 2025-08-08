@@ -1,3 +1,9 @@
+"""Speak2Text.py
+  This script transcribes audio files to text using the Whisper ASR model.
+  It accepts an audio file path and model size as command line arguments.
+  Usage: python Speak2Text.py <audio_file_path> <model_size>
+  Example: python Speak2Text.py audio.wav base
+  """
 import whisper
 import time
 import sys
