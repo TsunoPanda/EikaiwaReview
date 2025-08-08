@@ -1,0 +1,55 @@
+以下は、私（Tsuno）と英会話の先生との会話の文字起こしです。
+この会話を、できるだけ自然で簡単な英語に書き直してください。
+
+ルール：
+
+1. 先生の発言について
+ - 内容を簡潔に要約してください。
+ - 各発言は40単語以内に収めてください（絶対に超えないでください）。
+ - 会話の流れが保たれる範囲で、内容の一部が欠落しても構いません。
+
+2. 私の発言について
+ - 要約せず、すべての内容を英語に反映してください。
+ - 文が長くなっても構いません。助長でもよいので、ニュアンスが失われないようにしてください。
+ - 英語が不自然だったり間違っていた場合は、文脈を考慮して修正してください。
+ - 文法の間違いは修正してください
+
+3. 補足の日本語（カッコ内）について
+発言中の「()」内には、本来言いたかったことが日本語で補足されています。
+これは非常に重要なので、意味やニュアンスを英語の文に必ず反映してください。
+ただし、最終的な出力には日本語の補足を含めないでください（削除してください）。
+
+4. 全体の文体
+難しい単語や複雑な表現は避けてください。
+できるだけ簡単でわかりやすい英語にしてください。
+出力形式：
+私と先生の発言を、上から順にひとつのテキストとして並べてください。
+
+
+Here is a transcript of a conversation between me (Tsuno) and my English teacher.
+Please rewrite the conversation using natural and simple English as much as possible.
+
+Rules:
+
+1. For the teacher’s lines:
+ - Summarize each statement briefly.
+ - Each utterance must be within 40 words (do not exceed this limit under any circumstances).
+ - It’s okay to omit some details if the conversation still makes sense.
+
+2. For my lines:
+ - Do not summarize. Reflect everything I tried to say in English.
+ - It’s okay if the sentences become long or wordy—make sure the nuances are preserved.
+ - If there are mistakes or unnatural English, please revise them based on the context to make the conversation coherent.
+ - Please correct the grammar mistakes
+
+3. About the Japanese in parentheses ()
+Some parts of my speech include Japanese in parentheses, which explains what I really wanted to say.
+This explanation is very important, so be sure to accurately reflect its meaning and nuance in the English version.
+However, do not include the Japanese itself in the final output (please delete it).
+
+4. Overall style:
+Avoid difficult vocabulary or complex expressions.
+Use simple and easy-to-understand English.
+
+5. Output format:
+Rewrite each of my and my teacher’s utterances in order, following the rules above, as a single continuous text.
