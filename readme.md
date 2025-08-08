@@ -1,3 +1,33 @@
+# 私的DMM英会話レビュー方法
+1. **DMM英会話を受ける**
+2. **レッスンの音声をダウンロード**
+3. **ダウンロードした音声をSpeak2Text.pyでテキストに変換**
+   
+   以下のようなテキストが生成される
+   
+   ![Sample Transcription](resource/transcription.png)
+4. **音声を聞きながらそのテキストファイルを編集。**
+- 誰がしゃべったかの情報
+- ()の中に、日本語でも良いので、どのようなことを言いたかったのか。
+
+  音声を聞いていると、「こういうことが言いたかったのにうまく言えなかった。」「うまく表現する言い方がわからなかったので伝えたかったことと若干意味が違ってしまった。」などがあるので、本来伝えたかった内容を日本語でも良いから記入する。
+  
+  上記を記入し以下のようなテキストファイルを作成する。
+  <br>
+  ![Sample text](resource/text.png)
+
+5. **ChatGPTなどを使い会話テキストを校正する**
+<br>EikaiwaPrompt.txt内のプロンプトを使用して編集したテキストの英語をブラッシュアップする。この時()内に記入した日本語は英語に反映される。
+
+6. **ブラッシュアップしたテキストをText2Movie.pyで動画を作成。(有料)**
+<br>これはOpenAIのテキスト読み上げAPIを使用するので有料です。これにより、テキストとその音声+無音時間の動画が作成されます。
+
+7. その動画を使用して、シャドーイング、リピーティングを繰り返す。
+<br>音声時間でシャードイング、無音時間にリピーティングができます。
+
+
+以下はText2MovieとSpeak2Textの説明です。
+
 # EikaiwaReview
 
 A Python toolkit for processing English conversation text and creating review materials with AI-generated audio and video content.
