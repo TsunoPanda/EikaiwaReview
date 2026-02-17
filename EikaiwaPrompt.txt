@@ -26,7 +26,7 @@
 私と先生の発言を、上から順にひとつのテキストとして並べてください。
 
 
-Here is a transcript of a conversation between me (Tsuno) and my English teacher.
+Here is a transcript of a conversation between me and my English teacher.
 Please rewrite the conversation using natural and simple English as much as possible.
 
 Rules:
