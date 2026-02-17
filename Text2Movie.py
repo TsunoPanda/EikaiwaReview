@@ -174,13 +174,12 @@ class Text2MovieProcessor:
       print("ffmpeg not available or failed, returning WAV data instead.")
       return wav_buffer.getvalue()
 
-  def get_speak_audio(self, text: str) -> Optional[bytes]:
+  def get_speak_audio(self, text: str, selected_voice) -> Optional[bytes]:
     """Get audio from OpenAI TTS API."""
 
     if( TEST_MODE ):
       return self.create_test_audio()
     try:
-      selected_voice = random.choice(self.config.available_voices)
       response = openai.audio.speech.create(
         model="tts-1",
         voice=selected_voice,
@@ -298,12 +297,13 @@ class Text2MovieProcessor:
       # split paragraph.content into sentences
       input_sentences = self.split_string_to_sentences(paragraph.content)
 
+      selected_voice = random.choice(self.config.available_voices)
       for sentence in input_sentences:
         print(f"Processing sentence: {sentence[:50]}...")
         audio_file = f"part_{sentence_idx}.mp3"
         print(f"creating {audio_file}")
         
-        speak = self.get_speak_audio(sentence.strip())
+        speak = self.get_speak_audio(sentence.strip(), selected_voice)
         if speak is None:
           print(f"Failed to generate audio for: {sentence[:50]}...")
           continue
