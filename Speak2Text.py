@@ -43,6 +43,9 @@ if __name__ == "__main__":
     transcription = transcribe_audio(audio_file_path, model_size)
     end_time = time.time()  # End timing
 
+    # transcription formatting: add new lines after sentences
+    transcription = transcription.replace(". ", ".\n").replace("? ", "?\n").replace("! ", "!\n")
+
     with open("transcription.txt", "w", encoding="utf-8") as f:
       f.write(transcription)
 
